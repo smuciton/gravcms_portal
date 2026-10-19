@@ -18,3 +18,7 @@ images/
 
 # Environment files
 .env
+
+# TLS certificates / private keys
+certs/*
+!certs/.gitkeep
