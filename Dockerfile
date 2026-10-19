@@ -29,10 +29,7 @@ RUN curl -fsSL -o grav.zip "https://getgrav.org/download/core/grav/${GRAV_VERSIO
     && unzip -q grav.zip \
     && rm -rf html grav.zip \
     && mv grav html
- 443
 
-ENTRYPOINT ["ssl-entrypoint.sh"]
-CMD ["apache2-foreground"]
 WORKDIR /var/www/html
 
 COPY user/config ./user/config
@@ -41,4 +38,7 @@ COPY user/pages ./user/pages
 RUN bin/gpm install -y saturn form email pagination feed taxonomylist error problems admin \
     && chown -R www-data:www-data /var/www/html
 
-EXPOSE 80
+EXPOSE 80 443
+
+ENTRYPOINT ["ssl-entrypoint.sh"]
+CMD ["apache2-foreground"]
