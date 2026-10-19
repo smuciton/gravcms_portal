@@ -1,0 +1,34 @@
+title: CFDemos
+intro: Hello, Welcome to the Cloudflare Demos Landing Page
+# Avatar must be uploaded to theme "img" folder.
+intro_avatar: avatar.png
+
+author:
+  name: SXP
+  email: 'noreply@example.com'
+  footer: Customised by SXP
+  footer2: Powered by Grav
+  url: http://www.cloudflare.com
+  url2: http://getgrav.org
+
+metadata:
+  description: 'GravCMS portal to test Cloudflare features.'
+
+taxonomies: [category, tag]
+
+# Main Menu (extra links after the pages)
+menu:
+  - text: External link
+    link: "#"
+  - text: Feed
+    link: "/usecases.rss"
+
+social:
+  - icon: twitter
+    link: "http://twitter.com/cloudflare"
+  - icon: instagram
+    link: "https://www.instagram.com/cloudflare"
+  - icon: linkedin
+    link: "https://www.linkedin.com/company/cloudflare"
+  - icon: github
+    link: "https://github.com/cloudflare"

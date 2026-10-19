@@ -1,0 +1,16 @@
+services:
+  grav:
+    build: .
+    container_name: gravcms_portal
+    ports:
+      - "8080:80"
+    volumes:
+      - ./user/config:/var/www/html/user/config
+      - ./user/pages:/var/www/html/user/pages
+      - grav_accounts:/var/www/html/user/accounts
+      - grav_data:/var/www/html/user/data
+    restart: unless-stopped
+
+volumes:
+  grav_accounts:
+  grav_data:

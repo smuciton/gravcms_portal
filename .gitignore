@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Grav runtime / secrets (installed or generated, not versioned)
+user/accounts/*
+!user/accounts/.gitkeep
+user/data/*
+!user/data/.gitkeep
+user/plugins/*
+!user/plugins/.gitkeep
+user/themes/*
+!user/themes/.gitkeep
+cache/
+logs/
+tmp/
+backup/
+images/
+
+# Environment files
+.env
